@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "no_double_sneak",
+  "version": "${version}",
+  "name": "No Double Sneak",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/blackilykat/No Double Sneak"
+  },
+  "license": "MIT",
+  "icon": "assets/no_double_sneak/icon.png",
+  "environment": "client",
+  "entrypoints": {},
+  "mixins": [
+    "no_double_sneak.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
