@@ -2,23 +2,29 @@
   "schemaVersion": 1,
   "id": "no_double_sneak",
   "version": "${version}",
-  "name": "No Double Sneak",
-  "description": "Fixes the annoying bug where sneaking looks wrong in laggy servers (MC-159163)",
-  "authors": [
-    "Blackilykat"
-  ],
-  "contact": {
-    "repo": "https://github.com/blackilykat/No Double Sneak"
-  },
-  "license": "MIT",
-  "icon": "assets/no_double_sneak/icon.png",
   "environment": "client",
-  "entrypoints": {},
   "mixins": [
     "no_double_sneak.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
     "minecraft": "${minecraft_version}"
-  }
+  },
+  "name": "No Double Sneak",
+  "description": "Fixes the annoying bug where sneaking looks wrong in laggy servers (MC-159163)",
+  "authors": [
+    {
+      "name": "Blackilykat",
+      "contact": {
+        "email": "contact@blackilykat.dev"
+      }
+    }
+  ],
+  "contact": {
+    "homepage": "https://github.com/Blackilykat/no_double_sneak",
+    "issues": "https://github.com/Blackilykat/no_double_sneak/issues",
+    "sources": "https://github.com/Blackilykat/no_double_sneak"
+  },
+  "license": "MIT",
+  "icon": "assets/no_double_sneak/icon.png"
 }
