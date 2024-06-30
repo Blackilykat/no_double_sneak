@@ -3,8 +3,10 @@
   "id": "no_double_sneak",
   "version": "${version}",
   "name": "No Double Sneak",
-  "description": "",
-  "authors": [],
+  "description": "Fixes the annoying bug where sneaking looks wrong in laggy servers (MC-159163)",
+  "authors": [
+    "Blackilykat"
+  ],
   "contact": {
     "repo": "https://github.com/blackilykat/No Double Sneak"
   },
