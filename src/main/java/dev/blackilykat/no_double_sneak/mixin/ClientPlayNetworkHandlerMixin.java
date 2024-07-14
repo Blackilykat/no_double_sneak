@@ -16,6 +16,6 @@ public class ClientPlayNetworkHandlerMixin {
     @Inject(method = "onEntityTrackerUpdate", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/data/DataTracker;writeUpdatedEntries(Ljava/util/List;)V", shift = At.Shift.BEFORE), locals = LocalCapture.CAPTURE_FAILHARD)
     private void no_double_sneak$fixBug(EntityTrackerUpdateS2CPacket packet, CallbackInfo ci, Entity entity) {
         if(!entity.equals(MinecraftClient.getInstance().player)) return;
-        packet.trackedValues().removeIf(entry -> entry.handler().equals(TrackedDataHandlerRegistry.ENTITY_POSE));
+        packet.getTrackedValues().removeIf(entry -> entry.getData().getType().equals(TrackedDataHandlerRegistry.ENTITY_POSE));
     }
 }
