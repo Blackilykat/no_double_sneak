@@ -8,7 +8,7 @@
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-    "minecraft": "${minecraft_version}"
+    "minecraft": ">=1.20"
   },
   "name": "No Double Sneak",
   "description": "Fixes the annoying bug where sneaking looks wrong in laggy servers (MC-159163)",
